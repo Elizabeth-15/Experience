@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+}
+section {
+    padding: 25px 0;
+}
+main {
+    flex-grow: 1;
+}
+footer {
+    flex-shrink: 0;
+}
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.about-item {
+    width: 100px;
+    height: 150px;
+    border: 1px solid;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.about__buttons {
+    display: flex;
+    gap: 20px;
+}
+.about-btn {
+    width: 100%;
+    max-width: max-content;
+    background: transparent;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form h2 {
+    margin-bottom: 20px;
+}
+.form__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.form-wrap input {
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.form-btn {
+    width: 100%;
+    max-width: max-content;
+    background: transparent;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.post-item {
+    padding: 10px;
+    border: 2px solid aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.post-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post-item__btn {
+    width: 100%;
+    max-width: max-content;
+    background: transparent;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.post-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.post-error {
+    display: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: red;
+}
+
+.post-loading {
+    display: none;
+    font-size: 24px;
+}
+
+.info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.select select {
+    width: 80px;
+    height: 30px;
+}
+
+.page-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-item {
+    padding: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
